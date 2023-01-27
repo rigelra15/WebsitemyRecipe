@@ -14,7 +14,7 @@
 ![image](https://user-images.githubusercontent.com/115273885/215131077-7bd6b22c-258f-4ee1-a471-616fcca8fad6.png)
 
 
-* Untuk tampilan mobile bisa dipraktekkan langsung.
+* Untuk responsive untuk mobile bisa dicoba langsung.
 
 > Untuk tombol SIMPAN belum bisa digunakan.
 

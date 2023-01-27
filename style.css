@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+/* FOR NAVIGATION BAR */
+.navbar{
+    width: 100vw;
+    background-color: white;
+    margin: 0;
+    top: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    color: red;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#my{
+    color: red;
+}
+
+.navbar a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 30px 5%;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar ul li.active{
+    font-size: 1.1rem;
+    background-color: red;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar li:first-child{
+    margin-right: auto;
+}
+
+.banner{
+    background-color: red;
+    opacity: 1;
+    background-image: url('images/websitemyRecipe.png');
+}
+
+#wrapper-main{
+    padding: 30px 8%;
+    margin: 2em;
+    margin-top: 7em;
+}
+
+.header{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#wrapper-foods{
+    padding: 30px 8%;
+    margin: 2em;
+}
+
+#wrapper-banner{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: 'flyingfoods flyingfoods flyingfoods textFoods textFoods textFoods ';
+    align-items: center;
+}
+
+#wrapper-banner .imageFoods{
+    padding: 10px;
+}
+
+.imageFoods{
+    grid-area: flyingfoods;
+}
+
+.textBanner{
+    grid-area: textFoods;
+}
+
+.textBanner h2{
+    font-size: 54px;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}
+
+.textBanner p{
+    color: white;
+}
+
+#wrapper-banner .imageFoods img{
+    width: 400px;
+}
+
+#wrapper-popular{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 35px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 20px;
+    border-top: 0px solid red;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all .50s ease;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+    transition: all .50s ease;
+}
+
+.container h2{
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+    font-size: 14.7px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.actButton{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#cook{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+#cook a{
+    color: white;
+}
+
+#save{
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    transition: all .50s ease;
+}
+
+#cook:hover {
+    background-color: rgb(201, 0, 0);
+    transform: scale(1.05);
+    transition: all .50s ease;
+}
+
+#save:hover {
+    background-color: orange;
+    border-color: orange;
+    color: white;
+    transition: all .50s ease;
+}
+
+#menu-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#menu-grid button{
+    border: none;
+    background: none;
+}
+
+#menu-grid button a:hover{
+    color: red;
+}
+
+#menu-grid button a{
+    color: black;
+}
+
+/*================================*/
+
+footer{
+    padding: 20px 0;
+    background-color: black;
+}
+
+footer ul li{
+    justify-content: space-between;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    list-style: none;
+    font-weight: 500;
+}
+
+footer span{
+    color: rgb(100, 100, 100);
+}
+
+@media screen and (max-width:1300px){
+    #wrapper-popular{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:1030px){
+    #wrapper-popular{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #wrapper-banner .imageFoods img{
+        width: 350px;
+    }
+
+    #wrapper-banner .imageFoods{
+        padding: 0;
+    }
+
+    #wrapper-banner{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 'flyingfoods flyingfoods flyingfoods textFoods textFoods textFoods textFoods';
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        font-size: 8px;
+    }
+
+    .navbar a{
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 5px 0;
+        margin: 0px 10px;
+        transition: all .50s ease;
+        align-items: center;
+    }
+
+    .navbar ul{
+        padding: 10px 5%;
+    }
+
+    .navbar ul li.active{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo i{
+        font-size: 20px;
+    }
+    
+    .logo span{
+        font-size: 1em;
+    }
+
+    #wrapper-main{
+        padding: 30px 5%;
+        margin-top: 6.3em;
+    }
+
+    #wrapper-popular{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #wrapper-banner .imageFoods img{
+        width: 270px;
+    }
+
+    #wrapper-banner .imageFoods{
+        padding: 0;
+    }
+
+    #wrapper-banner{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 'flyingfoods flyingfoods flyingfoods textFoods textFoods textFoods textFoods';
+        align-items: center;
+    }
+
+    .textBanner h2{
+        font-size: 35px;
+        color: white;
+        text-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, 1);
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .navbar a{
+        font-size: 0.8rem;
+    }
+
+    .navbar ul{
+        padding: 10px 5%;
+    }
+
+    .navbar ul li.active{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .imageFoods{
+        grid-area: flyingfoods;
+    }
+    
+    .textBanner{
+        grid-area: textFoods;
+    }
+
+    #wrapper-main{
+        padding: 10px 0%;
+        margin-top: 6.3em;
+    }
+
+    #wrapper-banner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'flyingfoods textFoods ';
+        align-items: center;
+    }
+
+    #wrapper-banner .imageFoods img{
+        width: 200px;
+    }
+
+    #wrapper-banner .imageFoods{
+        padding: 0;
+    }
+
+    #wrapper-popular{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .textBanner h2{
+        font-size: 20px;
+        color: white;
+        text-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, 1);
+        margin-bottom: 10px;
+    }
+}

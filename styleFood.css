@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all .50s ease;
+}
+
+body{
+    margin: 0;
+    background-image: url('images/bgImage10op.png');
+}
+
+/* FOR NAVIGATION BAR */
+.navbar{
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    color: red;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#my{
+    color: red;
+}
+
+.navbar a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 30px 5%;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar ul li.active{
+    font-size: 1.1rem;
+    background-color: red;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar li:first-child{
+    margin-right: auto;
+}
+/*================================*/
+
+#wrapper-main{
+    padding: 20px 5%;
+}
+
+#wrapper-main button a{
+    text-decoration: none;
+    color: red;
+}
+
+.header{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 7.5em;
+}
+
+.steps{
+    grid-area: steps;
+    padding: 20px;
+}
+
+#wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: 
+    "imageFood igd grspices"
+    "imageFood steps steps";
+    grid-gap: 35px;
+}
+
+.container{
+    padding: 20px;
+    grid-area: imageFood;
+}
+
+.container h2{
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+    font-size: 15px;
+    text-align: center;
+}
+
+.container h6{
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+    color: black;
+}
+
+.image{
+    margin-bottom: 0;
+}
+
+.ingredients{
+    border-radius: 20px;
+    padding: 20px;
+    transition: all .50s ease;
+    grid-area: igd;
+}
+
+.groundspices{
+    border-radius: 20px;
+    padding: 20px;
+    transition: all .50s ease;
+    grid-area: grspices;
+}
+
+.groundspices h2{
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    align-items: stretch;
+}
+
+.actButton{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#menu-grid button{
+    border: none;
+    background: none;
+}
+
+#menu-grid button a:hover{
+    color: red;
+}
+
+#menu-grid button a{
+    color: black;
+}
+
+/*==========================================*/
+
+footer{
+    padding: 10px 0;
+    background-color: black;
+}
+
+footer ul li{
+    justify-content: space-between;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    list-style: none;
+    font-weight: 500;
+}
+
+footer span{
+    color: rgb(100, 100, 100);
+}
+
+@media screen and (max-width:900px){
+    html{
+        width: 100%;
+    }
+
+    .navbar{
+        max-width: 100%;
+    }
+
+    .navbar a{
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 5px 0;
+        margin: 0px 10px;
+        transition: all .50s ease;
+        align-items: center;
+    }
+
+    .navbar ul{
+        padding: 10px 5%;
+    }
+
+    .navbar ul li.active{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .header{
+        margin-top: 1.8em;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo i{
+        font-size: 20px;
+    }
+    
+    .logo span{
+        font-size: 1em;
+    }
+
+    #wrapper-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+    }
+
+    .header h1{
+        margin: 0.5em 0;
+    }
+
+    .container h2{
+        font-size: 15.8px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .navbar a{
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 5px 0;
+        margin: 0px 10px;
+        transition: all .50s ease;
+        align-items: center;
+    }
+
+    .navbar ul{
+        padding: 10px 5%;
+    }
+
+    .navbar ul li.active{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .header{
+        margin-top: 3em;
+    }
+
+    #wrapper-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}

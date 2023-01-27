@@ -21,7 +21,8 @@
 - - - -
 **Identitas Pembuat:**
 
-Nama    : Rigel Ramadhani Waloni
+* Nama    : Rigel Ramadhani Waloni
+* NIM     : 5024221058 
+* ID GDSC : 220010155
 
-ID GDSC : 220010155
 
